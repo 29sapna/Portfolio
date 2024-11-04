@@ -1,0 +1,177 @@
+/* General styling */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+/* Title section styling */
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* About section with flex layout */
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+/* Left Side with Profile Image */
+.about-left {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Side Text Content */
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* About Paragraph Styling */
+.about-para p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Skills Section Styling */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-skill p {
+    font-weight: 600;
+    font-size: 18px;
+    min-width: 120px;
+    color: #FFFFFF;
+}
+
+.about-skill hr {
+    flex: 1;
+    height: 6px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #FF8A00, #A200FF);
+}
+
+/* Achievements Section */
+.about-achievements {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 20px;
+}
+
+.about-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.about-achievement h1 {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FF8A00, #A200FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-achievement p {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Hover Effects */
+.about-skill:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.about-achievement:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-title h1 {
+        font-size: 36px;
+    }
+
+    .about-achievement h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title h1 {
+        font-size: 32px;
+    }
+
+    .about-para p {
+        font-size: 16px;
+    }
+
+    .about-achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
