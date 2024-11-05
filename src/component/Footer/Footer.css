@@ -1,8 +1,7 @@
-/* Footer.css */
 
 .footer {
-    background-color: #1a1a1a; /* Dark background */
-    color: #ffffff; /* White text color */
+    background-color: #1a1a1a; 
+    color: #ffffff; 
     padding: 40px;
 }
 
@@ -26,9 +25,9 @@
 .footer-email-input {
     display: flex;
     align-items: center;
-    background-color: #333333; /* Dark grey background for input */
+    background-color: #333333; 
     border-radius: 20px;
-    padding: 4px 10px; /* Smaller padding */
+    padding: 4px 10px; 
     margin-right: 10px;
 }
 
@@ -44,25 +43,25 @@
     color: #ffffff;
     outline: none;
     padding: 6px;
-    font-size: 0.85em; /* Smaller font */
-    width: 150px; /* Smaller width */
+    font-size: 0.85em; 
+    width: 150px;
 }
 
 .footer-subscribe {
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
     color: #FFF; 
-    padding: 6px 12px; /* Smaller padding */
+    padding: 6px 12px; 
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .footer-subscribe:hover {
-    background-color: #777777; /* Lighter grey on hover */
+    background-color: #777777; 
 }
 
 hr {
-    border: 0.5px solid #555555; /* Grey line color */
+    border: 0.5px solid #555555; 
     margin: 20px 0;
 }
 
@@ -75,7 +74,7 @@ hr {
 
 .footer-bottom-left {
     font-size: 0.9em;
-    color: white; /* Lighter grey for text */
+    color: white; 
 }
 
 .footer-bottom-right {
@@ -85,7 +84,6 @@ hr {
     color: white;
 }
 
-/* Responsive styles for screens below 768px */
 @media (max-width: 768px) {
     .footer {
         padding: 30px;
